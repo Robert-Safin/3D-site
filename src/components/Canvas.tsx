@@ -10,14 +10,20 @@ import BoxLeftTop from "./boxes/BoxLeftTop";
 import BoxRightTop from "./boxes/BoxRightTop";
 import BoxRightBottom from "./boxes/BoxRightBottom";
 import BoxLefBottom from "./boxes/BoxLeftBottom";
+import FirstView from "./views/FirstView";
+import SecondView from "./views/SecondView";
+import ThirdView from "./views/ThirdView";
+import ForthView from "./views/ForthView";
+import FifthView from "./views/FifthView";
 interface Props {}
 
 const Three: FC<Props> = (props) => {
   return (
     <div className="flex mx-auto bg-black w-screen h-screen">
-      <Canvas camera={{ position: [50, 3, 0] }} shadows>
-        {/* <ambientLight intensity={0.1} /> */}
+      <Canvas camera={{ position: [45, 1, 0] }} shadows>
+
         <OrbitControls />
+
 
         <Light1 />
         <Light2 />
@@ -28,7 +34,14 @@ const Three: FC<Props> = (props) => {
         <BoxRightTop />
         <BoxRightBottom />
 
-        {"floor"}
+        <FirstView/>
+        <SecondView/>
+        <ThirdView/>
+        <ForthView/>
+        <FifthView/>
+
+
+
         <mesh rotation-x={-Math.PI / 2} receiveShadow position={[0, -0.5, 0]}>
           <circleGeometry args={[1000]} />
           <meshStandardMaterial />

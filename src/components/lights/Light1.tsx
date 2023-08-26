@@ -14,11 +14,7 @@ const Light1: FC = () => {
   });
 
   return (
-    <pointLight ref={light1ref} intensity={300} position={[0, 0, 0]} castShadow color={'firebrick'} >
-      {/* <mesh>
-        <sphereGeometry args={[0.2, 32, 32]} />
-        <meshStandardMaterial color={'blue'} />
-      </mesh> */}
+    <pointLight ref={light1ref} intensity={300} position={[0, 0, 0]} castShadow color={'red'} >
     </pointLight>
   );
 }

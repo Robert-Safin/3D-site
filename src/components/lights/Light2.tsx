@@ -15,7 +15,7 @@ const Light2: FC = () => {
   });
 
   return (
-    <pointLight ref={light2ref} intensity={300} position={[0, 30, 0]} castShadow color={'crimson'} >
+    <pointLight ref={light2ref} intensity={300} position={[0, 30, 0]} castShadow color={'firebrick'} >
        {/* <mesh>
         <sphereGeometry args={[0.2, 32, 32]} />
         <meshStandardMaterial color={'blue'} />
