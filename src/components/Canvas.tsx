@@ -1,7 +1,7 @@
 "use client";
-import { Canvas, useFrame } from "@react-three/fiber";
+import { Canvas, useFrame, useThree } from "@react-three/fiber";
 
-import { FC, useRef } from "react";
+import { FC, useRef, useState } from "react";
 import { Box, Environment, Html, OrbitControls } from "@react-three/drei";
 import Light1 from "./lights/Light1";
 import Light3 from "./lights/Light3";
@@ -15,16 +15,18 @@ import SecondView from "./views/SecondView";
 import ThirdView from "./views/ThirdView";
 import ForthView from "./views/ForthView";
 import FifthView from "./views/FifthView";
+import EntryPoint from "./views/EntryPoint";
+
 interface Props {}
 
 const Three: FC<Props> = (props) => {
+
   return (
     <div className="flex mx-auto bg-black w-screen h-screen">
-      <Canvas camera={{ position: [45, 1, 0] }} shadows>
+      <Canvas camera={{ position: [1000, 1, 0] }} shadows>
 
         <OrbitControls />
-
-
+        <EntryPoint/>
         <Light1 />
         <Light2 />
         <Light3 />
@@ -44,7 +46,7 @@ const Three: FC<Props> = (props) => {
 
         <mesh rotation-x={-Math.PI / 2} receiveShadow position={[0, -0.5, 0]}>
           <circleGeometry args={[1000]} />
-          <meshStandardMaterial />
+          <meshStandardMaterial/>
         </mesh>
       </Canvas>
     </div>

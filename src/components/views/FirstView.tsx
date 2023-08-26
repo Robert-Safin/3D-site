@@ -1,3 +1,5 @@
+'use client'
+
 import { Html } from "@react-three/drei";
 import { useFrame, useThree } from "@react-three/fiber";
 import { FC, useEffect, useRef, useState } from "react";
@@ -21,7 +23,7 @@ const FirstView: FC = () => {
   });
 
   return (
-    <Html position={[35, 1, 0]} occlude transform rotation={[0, Math.PI / 2, 0]}>
+    <Html position={[30, 1, -0.5]} occlude transform rotation={[0, Math.PI / 2, 0]}>
       <div className="bg-gray-900 bg-opacity-50 w-[300px] text-center">
         <h1 className="text-white">hi mum</h1>
         <button className="text-red-400" onClick={navigateToNextView}>
