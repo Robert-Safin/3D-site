@@ -13,12 +13,12 @@ const EntryPoint: FC = () => {
   const speed = 0.005;
 
   useFrame((_, delta) => {
-
     if (alpha < 1) {
       camera.position.lerp(targetPosition, speed);
       setIsTransitioning(true);
       setAlpha(prevAlpha => prevAlpha + speed);
     }
+
 
   });
 

@@ -8,6 +8,7 @@ import * as THREE from "three";
 const FirstView: FC = () => {
   const { camera } = useThree();
 
+
   const [targetPosition] = useState(new THREE.Vector3(0, 30, -70));
   const [isTransitioning, setIsTransitioning] = useState(false);
   const transitionStartTime = useRef<number | null>(null);
@@ -18,7 +19,7 @@ const FirstView: FC = () => {
 
   useFrame((state, delta) => {
     if (isTransitioning) {
-        camera.position.lerpVectors(camera.position, targetPosition, delta);
+        camera.position.lerpVectors(camera.position, targetPosition, delta /2);
     }
   });
 

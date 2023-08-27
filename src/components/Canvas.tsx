@@ -25,7 +25,7 @@ const Three: FC<Props> = (props) => {
     <div className="flex mx-auto bg-black w-screen h-screen">
       <Canvas camera={{ position: [1000, 1, 0] }} shadows>
 
-        <OrbitControls />
+        <OrbitControls minPolarAngle={0} maxPolarAngle={Math.PI / 2} />
         <EntryPoint/>
         <Light1 />
         <Light2 />

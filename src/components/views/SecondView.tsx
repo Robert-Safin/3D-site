@@ -20,7 +20,7 @@ const SecondView:FC = () => {
 
   useFrame((state,delta) => {
     if (isTransitioning) {
-        camera.position.lerpVectors(camera.position, targetPosition, delta);
+        camera.position.lerpVectors(camera.position, targetPosition, delta/2);
     }
 
     if (ref.current) {
