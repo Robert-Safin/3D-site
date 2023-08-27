@@ -48,7 +48,7 @@ const ThirdView: FC = () => {
           László Zsolt Bordos
         </p>
 
-        <Image src={'/img/banner.png'} alt='banner' width={4000} height={4000} className="h-40 w-full object-cover"/>
+        <Image src={'/img/banner.jpeg'} alt='banner' width={4000} height={4000} className="h-40 w-full object-cover"/>
 
         <MdOutlineNavigateNext
           className="text-white text-3xl absolute bottom-2 right-2"

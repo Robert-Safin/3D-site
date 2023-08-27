@@ -38,7 +38,7 @@ const FirstView: FC = () => {
     >
       <div className="bg-white p-2 bg-opacity-5 w-[350px] h-[600px] rounded-md shadow-sm shadow-gray-500">
         <div className="flex justify-between">
-          <Image src={"/logo.png"} alt="logo" width={100} height={100} />
+          <Image src={"/logo.jpeg"} alt="logo" width={100} height={100} />
           <div className="flex space-x-4">
             <Link href={'https://www.facebook.com/lambudapest/'} target="_blank">
             <AiOutlineFacebook className="text-white text-3xl" />
