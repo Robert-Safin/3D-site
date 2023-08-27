@@ -14,7 +14,7 @@ const Light1: FC = () => {
   });
 
   return (
-    <pointLight ref={light1ref} intensity={300} position={[0, 0, 0]} castShadow color={'blue'} >
+    <pointLight ref={light1ref} intensity={300} position={[0, 0, 0]} castShadow color={'red'} >
     </pointLight>
   );
 }
